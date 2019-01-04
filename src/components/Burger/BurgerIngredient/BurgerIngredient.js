@@ -25,20 +25,21 @@ class BurgerIngredient extends Component {
       case "cheese":
         ingredient = <div className="Cheese" />;
         break;
-      case "salad":
-        ingredient = <div className="Salad" />;
-        break;
       case "bacon":
         ingredient = <div className="Bacon" />;
+        break;
+      case "salad":
+        ingredient = <div className="Salad" />;
         break;
       default:
         ingredient = null;
     }
+
     return ingredient;
   }
 }
 
-// Validation of props types
+// Validate prop types
 BurgerIngredient.propTypes = {
   type: PropTypes.string.isRequired
 };
